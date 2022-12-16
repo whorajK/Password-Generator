@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Generator</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+		/>
+	</head>
+	<body>
+		<div class="password_box">
+			<span id="password-text">khfiyr83465</span>
+			<button id="copy" title="copy to clipboard">
+				<i class="bi bi-clipboard"></i>
+			</button>
+		</div>
+
+		<article class="wrapper">
+			<h2 class="wrapper__header">Generate secure password</h2>
+
+			<div class="wrapper__body">
+				<div class="body__div">
+					<label for="password-length">Password length</label>
+					<input
+						type="number"
+						id="password-length"
+						value="8"
+						min="8"
+						max="16"
+					/>
+				</div>
+
+				<div class="body__div">
+					<label for="uppercase">Uppercase</label>
+					<input type="checkbox" id="uppercase" />
+				</div>
+
+				<div class="body__div">
+					<label for="lowecase">Lowercase</label>
+					<input type="checkbox" id="lowec" />
+				</div>
+
+				<div class="body__div">
+					<label for="number">Number</label>
+					<input type="checkbox" id="number" />
+				</div>
+
+				<div class="body__div">
+					<label for="uppercase">symbol</label>
+					<input type="checkbox" id="symbol" />
+				</div>
+
+				<button id="generate-btn">Generate</button>
+			</div>
+
+			<div class="wrapper__footer">
+				<small>Select the checkboxes to generate a secure password</small>
+			</div>
+		</article>
+	</body>
+</html>
